@@ -1,0 +1,15 @@
+<!-- catalog/templates/catalog/index.html -->
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Welcome to Local Library</h1>
+    <p>This is the main page of the Local Library.</p>
+
+    <h2>Library Statistics</h2>
+    <ul>
+        <li><strong>Total Books:</strong> {{ num_books }}</li>
+        <li><strong>Total Book Instances:</strong> {{ num_instances }}</li>
+        <li><strong>Available Book Instances:</strong> {{ num_instances_available }}</li>
+        <li><strong>Total Authors:</strong> {{ num_authors }}</li>
+    </ul>
+{% endblock %}
